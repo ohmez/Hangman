@@ -1,0 +1,27 @@
+.container {
+    max-width: 60vw;
+    min-width: 20vw;
+    background: orange;
+    max-height: 60vh;
+    min-height: 20vh;
+    margin: auto;
+}
+.row {
+    display: inline-flex;
+    width: 60vw;
+    
+}
+.col {
+    margin: auto;
+    width: 20vw;
+}
+h6, h1 {
+    text-align: center;
+}
+.left {
+    border-left: 3px dotted black;
+    margin-left: 1vw;
+}
+.right {
+    margin-right: 1vw;
+}
