@@ -4,18 +4,37 @@ var G_array = [1,2,3,4,5];
 var Guesses = [];
 var Guessed = [];
 var Guess ='';
+var guessDiv = document.getElementById("G_array");
 
 console.log('Wins '+ wins);
 console.log('Guesses remaining ' + G_remain);
 console.log('Gusses letter positions ' + G_array);
 console.log('inner html var ' + Guessed);
-// event saves every key press into variable guesses and then pushes that to the innerHTML
+// keypress saves guesses and guessed if guess isn't already in guessed, refreshes guessed to html
 document.onkeyup = function() {
     var guess = event.key;
     Guesses.push(guess);
+    if(Guessed.length == 0) {
+        Guessed.push(guess);
+       document.getElementById("G_array").innerHTML = guess;
+       console.log(guessDiv);
+    } else if (Guessed.includes(guess)) {
+
+    } else {
+        Guessed.push(guess);
+    }
     Guess = guess;
-    console.log(Guess);
-    guessing();
+};
+// updating doesn't seem to work, I don't get why in the examples its done like this and works below but for me it doesnt...
+function updating() {
+    for (var j = 0; j < Guessed.length; j++) {
+    var newDiv = document.createElement("p");
+    newDiv.textContent = Guessed[j];
+    guessDiv.appendChild(newDiv);
+   console.log(newDiv);
+   console.log(show);
+   console.log(show);
+    }
 };
 
 function guessing() {
