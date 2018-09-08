@@ -16,24 +16,31 @@ document.onkeyup = function() {
     Guesses.push(guess);
     if(Guessed.length == 0) {
         Guessed.push(guess);
-       document.getElementById("G_array").innerHTML = guess;
        console.log(guessDiv);
     } else if (Guessed.includes(guess)) {
 
     } else {
         Guessed.push(guess);
     }
+    console.log(Guessed);
     Guess = guess;
+   updating();
 };
 // updating doesn't seem to work, I don't get why in the examples its done like this and works below but for me it doesnt...
 function updating() {
-    for (var j = 0; j < Guessed.length; j++) {
-    var newDiv = document.createElement("p");
-    newDiv.textContent = Guessed[j];
-    guessDiv.appendChild(newDiv);
-   console.log(newDiv);
-   console.log(show);
-   console.log(show);
+//     for (var j = 0; j < Guessed.length; j++) {
+//     var newDiv = document.createElement("p");
+//     newDiv.textContent = Guessed[j];
+//     guessDiv.appendChild(newDiv);
+//    console.log(newDiv);
+//    console.log(show);
+//    console.log(show);
+//     }
+    guessDiv.textContent = '';
+    for (var x = 0; x < Guessed.length; x++) {
+        var div = document.createElement('p');
+        div.textContent = Guessed[x];
+        guessDiv.appendChild(div);
     }
 };
 
