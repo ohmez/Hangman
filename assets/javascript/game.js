@@ -157,7 +157,7 @@ function winning() {
 function losing () {
     if (G_remain <= 0) {
         setTimeout(function() {
-        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> SORRY BUT YOUVE LOST </h1><img src="assets/images/hangman0.png" alt="start"></img></div></div></div>');
+        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Loser</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> SORRY BUT YOUVE LOST </h1><img src="assets/images/hangman0.png" alt="start"></img></div></div></div>');
         },500);
         setTimeout(function() {
             document.location.reload(true);
@@ -167,7 +167,7 @@ function losing () {
 
 function end () {
     if (wins == words.length) {
-        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> YOUVE WON IT ALL!!!!!!</h1><h2>Now go watch some anime</h2></div></div></div>');
+        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Winner Winner Chickn Dinner</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> YOUVE WON IT ALL!!!!!!</h1><h2>Now go watch some anime</h2></div></div></div>');
         window.open("https://vrv.co/gopremium?utm_source=paid_vrv&utm_medium=google_sem&utm_campaign=brand&gclid=Cj0KCQjwidPcBRCGARIsALM--ePdyvfxeUVOx_DI77L8EVOx-ScIokgnd6qaFMhBe7tlupODrMASKNwaAsknEALw_wcB", '_blank')
         setTimeout(function() {
         document.location.reload(true);
