@@ -28,3 +28,9 @@ h6, h1 {
 #G_array {
     display: inline-flex;
 }
+input {
+    display: none;
+}
+@media(max-width:410px) {
+
+}
