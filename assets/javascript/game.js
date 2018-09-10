@@ -143,15 +143,13 @@ function winning() {
         wins++;
         document.getElementById("wins").textContent = wins;
         secret.innerHTML =   "<h1>"+ secret.innerHTML.toUpperCase() + "<div>YOU'VE GUESSED IT<div>" + "</h1>";
-        console.log(G_array);
-    }, 100);
+        }, 100);
     setTimeout(function() {
         secret.innerHTML = "";
         guessDiv.innerHTML ="";
         mystery();
         end();
-        console.log(G_array);
-    }, 1500);
+        }, 1500);
 };
 
 function losing () {
