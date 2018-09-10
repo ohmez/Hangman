@@ -10,6 +10,8 @@ var guessDiv = document.getElementById("G_array");
 var words = [
     ['n', 'a', 'r','u', 't', 'o'],
     ['h', 'i', 'n','a', 't', 'a'],
+    ['m', 'i', 'd','o', 'r', 'i', 'y', 'a'],
+    ['a', 'l', 'l','m', 'i', 'g', 'h', 't'],
     ['a', 's', 't','a'],
     ['r', 'e', 'm'],
     ['r', 'a', 'm'],
@@ -165,7 +167,8 @@ function losing () {
 
 function end () {
     if (wins == words.length) {
-        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> YOUVE WON IT ALL!!!!!! </h1></div></div></div>');
+        document.write('<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>Document</title><link rel="stylesheet" type="text/css" href="assets/css/style.css"></head><body><div class="container"><div class="row"><div class="col"><h1> YOUVE WON IT ALL!!!!!!</h1><h2>Now go watch some anime</h2></div></div></div>');
+        window.open("https://vrv.co/gopremium?utm_source=paid_vrv&utm_medium=google_sem&utm_campaign=brand&gclid=Cj0KCQjwidPcBRCGARIsALM--ePdyvfxeUVOx_DI77L8EVOx-ScIokgnd6qaFMhBe7tlupODrMASKNwaAsknEALw_wcB", '_blank')
         setTimeout(function() {
         document.location.reload(true);
         }, 5000); 
