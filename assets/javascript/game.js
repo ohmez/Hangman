@@ -35,6 +35,7 @@ var photos = document.getElementById("photos");
 // end global varriables 
 window.onload = function () {
     mystery();
+    this.focus();
 
 };
 
