@@ -29,6 +29,7 @@ var images = [
     '<img src="assets/images/hangman9.png" alt="start"></img>',
     '<img src="assets/images/hangman10.png" alt="start"></img>',
 ];
+var photos = document.getElementById("photos");
 // end global varriables 
 window.onload = function () {
     mystery();
@@ -99,6 +100,8 @@ function mystery () {
     G_array = [];
     Guesses = [];
     Guesseses = [];
+    Guessed = [];
+    hang();
     document.getElementById("G_remain").textContent = G_remain;
     for (var i = 0; i < word.length; i++) {
         var letters = document.createElement("span");
@@ -138,13 +141,14 @@ function winning() {
         wins++;
         document.getElementById("wins").textContent = wins;
         secret.innerHTML =   "<h1>"+ secret.innerHTML.toUpperCase() + "<div>YOU'VE GUESSED IT<div>" + "</h1>";
-
+        console.log(G_array);
     }, 100);
     setTimeout(function() {
         secret.innerHTML = "";
         guessDiv.innerHTML ="";
-    mystery();
-    end();
+        mystery();
+        end();
+        console.log(G_array);
     }, 1500);
 };
 
@@ -168,9 +172,5 @@ function end () {
 }
 };
 function hang () {
-    var photos = document.getElementById("photos");
     photos.innerHTML = images[G_remain];
-    console.log(photos);
-
-
 };
