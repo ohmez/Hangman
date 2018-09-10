@@ -33,4 +33,7 @@ input {
 }
 @media(max-width:410px) {
 
+    input {
+        display: block;
+    }
 }
